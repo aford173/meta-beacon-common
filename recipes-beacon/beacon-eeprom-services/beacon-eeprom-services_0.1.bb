@@ -25,6 +25,10 @@ do_compile() {
 		echo "beacon-eeprom-decoder -i ${IMX8M_PATH}" > ${S}/dump-eeprom.sh
 	fi
 
+	if [ ${MACHINE} = "beacon-imx8mm-4g-12" ]; then
+		echo "beacon-eeprom-decoder -i ${IMX8M_PATH}" > ${S}/dump-eeprom.sh
+	fi
+
 	if [ ${MACHINE} = "beacon-imx8mm-4g-kit" ]; then
 		echo "beacon-eeprom-decoder -i ${IMX8M_PATH}" > ${S}/dump-eeprom.sh
 	fi
